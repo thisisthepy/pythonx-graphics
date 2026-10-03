@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pythonx-graphics"
-version = "0.0.1a0"
+version = "0.0.1a1"
 description = "Declarative 2D/3D graphics for Python apps on Kotlin Multiplatform: Compose for 2D, Filament for 3D, built for agents"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "Apache-2.0"
