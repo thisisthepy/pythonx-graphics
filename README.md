@@ -1,4 +1,4 @@
-# pythonx-game
+# pythonx-graphics
 
 Declarative 2D and 3D graphics for Python apps on Kotlin Multiplatform: Compose for 2D, Filament for
 3D, and a scene built for AI agents as well as people.
@@ -31,7 +31,7 @@ Status: specification. There is no code yet. Read [`docs/INTENT.md`](docs/INTENT
 Once published:
 
 ```bash
-uv add --prerelease allow pythonx-game
+uv add --prerelease allow pythonx-graphics
 ```
 
 Licensed under Apache-2.0.

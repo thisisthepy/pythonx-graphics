@@ -1,6 +1,6 @@
 # Intent
 
-What `pythonx-game` is for. This file is the boundary: `docs/SPEC.md` may not go beyond it. Anything
+What `pythonx-graphics` is for. This file is the boundary: `docs/SPEC.md` may not go beyond it. Anything
 the maintainer has not said is under "Open questions" until confirmed.
 
 ## Sources
@@ -58,7 +58,8 @@ Four jobs:
 
 ## 3. What it is, structurally
 
-- **A Python package** named `pythonx-game`, import package `pythonx.game`. Inferred: confirm.
+- **A Python package** named `pythonx-graphics`, import package `pythonx.graphics` (decided, open
+  question 2).
 - **Real Python code on disk**, like `pythonx-compose`. It imports Kotlin modules under their own
   Kotlin names through the binder. It never asks the binder to rename anything.
 - **A Kotlin layer** that hosts Filament inside Compose (a Compose `Applier` over Filament entities,
@@ -95,8 +96,9 @@ Four jobs:
    entry, needs approval); (b) `compose-multiplatform-core-extended`, as a multiplatform androidx-style
    library, like OS notifications (#13 there); (c) a separate Kotlin repository. Recommendation: (b)
    if its owners accept it, since that repository is where multiplatform Compose extensions live.
-2. **Package and import name.** `pythonx-game` / `pythonx.game` is inferred from the repository name.
-   A name such as `pythonx.graphics` may fit the agentic 2D/3D scope better. Confirm.
+2. **Package and import name: decided.** `pythonx-graphics` / `pythonx.graphics` (maintainer,
+   2026-10-04), replacing the first name `pythonx-game`: the scope is agentic 2D/3D graphics, games
+   included.
 3. **Physics engine.** Declared physics (SPEC §6) needs an engine. Candidates: Jolt Physics (MIT),
    Bullet (zlib), Box2D for 2D (MIT). Not chosen.
 4. **Web.** Filament has a WebGL/wasm build and Compose has wasm, but python-multiplatform's wasm

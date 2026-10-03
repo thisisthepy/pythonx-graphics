@@ -1,6 +1,6 @@
 # Specification
 
-What `pythonx-game` will do: the behavioural contract. Every item stays inside `docs/INTENT.md`.
+What `pythonx-graphics` will do: the behavioural contract. Every item stays inside `docs/INTENT.md`.
 Anything INTENT does not cover is under "Outside intent: needs a decision".
 
 | Status | Meaning |
@@ -18,9 +18,9 @@ the Kotlin layer lives (INTENT open question 1). Both are collected in section 1
 Examples install with uv, ppp or tcl once the package is published:
 
 ```bash
-uv add --prerelease allow pythonx-game
-ppp core add "pythonx-game==0.1.0a1"
-tcl install pythonx-game
+uv add --prerelease allow pythonx-graphics
+ppp core add "pythonx-graphics==0.1.0a1"
+tcl install pythonx-graphics
 ```
 
 ## 0. The shape in one example
@@ -28,7 +28,7 @@ tcl install pythonx-game
 ```python
 from pythonx.compose.runtime import Composable, app, state
 from pythonx.compose.material3 import Text
-from pythonx.game import Scene3D, Camera, Sun, Model, Spin, Box, Material
+from pythonx.graphics import Scene3D, Camera, Sun, Model, Spin, Box, Material
 
 angle_speed = state(30.0)              # degrees per second, shared by HUD and scene
 
@@ -236,7 +236,7 @@ Issue: to be opened.
 
 ### G8.1 Tool schemas generated from the components: `planned`
 
-`pythonx.game.tools()` returns tool definitions (JSON Schema) for `describe`, `query`, `capture`,
+`pythonx.graphics.tools()` returns tool definitions (JSON Schema) for `describe`, `query`, `capture`,
 `pick`, `edit` and every node kind's arguments, generated from the node signatures (the binder's
 `describe()` metadata for Kotlin-backed arguments). An app hands them to any agent framework. Whether
 an MCP server adapter ships here is INTENT open question 5. Issue: to be opened.
