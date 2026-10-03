@@ -156,11 +156,11 @@ to implement", say what you counted against.
 
 ---
 
-# Repository-specific rules: `pythonx-game`
+# Repository-specific rules: `pythonx-graphics`
 
 ## 11. What this repository is
 
-`pythonx-game` is a pythonx library: Python language extensions for apps that run on Kotlin
+`pythonx-graphics` is a pythonx library: Python language extensions for apps that run on Kotlin
 Multiplatform through python-multiplatform. It gives Python a declarative way to build 2D and 3D
 graphics, games and interactive scenes: Compose for 2D, Filament for 3D, one state model for both,
 and a scene that AI agents can read, ground, edit and verify.

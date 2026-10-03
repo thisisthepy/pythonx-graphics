@@ -1,4 +1,4 @@
-# pythonx-game
+# pythonx-graphics
 
 Kotlin Multiplatform 위의 Python 앱을 위한 선언형 2D·3D 그래픽스입니다. 2D는 Compose, 3D는 Filament로
 그리고, 사람뿐 아니라 AI 에이전트도 다룰 수 있게 장면을 설계합니다.
@@ -19,7 +19,7 @@ Kotlin Multiplatform 위의 Python 앱을 위한 선언형 2D·3D 그래픽스�
 배포되면 이렇게 설치합니다.
 
 ```bash
-uv add --prerelease allow pythonx-game
+uv add --prerelease allow pythonx-graphics
 ```
 
 Apache-2.0 라이선스입니다.
