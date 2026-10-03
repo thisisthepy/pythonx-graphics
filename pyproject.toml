@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythonx-graphics"
+version = "0.0.1a0"
+description = "Declarative 2D/3D graphics for Python apps on Kotlin Multiplatform: Compose for 2D, Filament for 3D, built for agents"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "BREW (b-re-w)"},
+]
+keywords = ["graphics", "3d", "filament", "compose", "agents", "kotlin-multiplatform"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+requires-python = ">= 3.15"
+
+[project.urls]
+Homepage = "https://thisisthepy.github.io/projects/pythonx-graphics/"
+Source = "https://github.com/thisisthepy/pythonx-graphics"
+Issues = "https://github.com/thisisthepy/pythonx-graphics/issues"
+
+[tool.setuptools.packages.find]
+include = ["pythonx.graphics*"]
